@@ -1,0 +1,11 @@
+Given an array of integers *nums* which is sorted in ascending order, and an integer *target*, write a function to search *target* in *nums*. If *target* exists, then return its index. Otherwise, return *-1*.  
+
+You must write an algorithm with *O(log n)* runtime complexity.  
+
+  
+left: the first element  
+right: the last element-> size of *nums* - 1   
+mid: left + (right-left)/2
+
+stop looping: 1. nums[mid] == target 2. left is not leq right  
+left = mid + 1 (right = mid - 1): already searched mid
